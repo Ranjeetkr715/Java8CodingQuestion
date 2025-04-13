@@ -10,5 +10,9 @@ public class StringJoinConceptOfJava8 {
         String collectJoiningArray = listOfStrings.stream().collect(Collectors.joining(", ", "[", "]"));
         System.out.println(collectJoiningArray);
 
+        List<String> listOfStrings1 = Arrays.asList("Java", "is", "Awesom");
+        String commonString = listOfStrings1.stream().collect(Collectors.joining(""));
+        System.out.println(commonString);
+
     }
 }
